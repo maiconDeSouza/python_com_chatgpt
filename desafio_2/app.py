@@ -2,23 +2,12 @@ from uuid import uuid4
 
 
 class Funcionario:
-    def __init__(self, nome, cargo, salario) -> None:
-        self.id = self.gerar_uuid()
-        self.nome = nome
-        self.cargo = cargo
-        self.salario = salario
 
+    @staticmethod
     def gerar_uuid(self):
         return str(uuid4())
 
-    def atualizar_cargo(self, novo_cargo):
-        self.cargo = novo_cargo
-
-    def atualizar_salario(self, novo_salario):
-        self.salario = novo_salario
-
-    def __str__(self):
-        return f'ID: {self.id}, Nome: {self.nome}, Cargo: {self.cargo}, Salário: {self.salario}'
+    # def gerar_novo_funcionario(self):
 
 
 class Empresa:
